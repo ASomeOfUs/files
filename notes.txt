@@ -1,0 +1,40 @@
+Actual version 3.9
+
+.ini file encoding should be UTF-8 (without BOM).
+Кодировка .ini файла должна быть UTF-8 (без BOM).
+
+You can set it with Notepad++.
+Вы можете установить ее открыв файл с помощью Notepad++.
+
+!!ВНИМАНИЕ!!
+Если был добавлен новый квар или новая команда, и вы не хотите заменять свой .ini файл полностью
+	вам следует добавить записи в следующие секции
+	Для всего: [Send Commands], [Commands]
+	Для кваров (дополнительно): [Settings] (название_квара = значение по умолчанию)
+				[Cvars] (название_квара BAD)
+
+!!NOTE!!
+If you see that new cvar or cmd was added and you don't wanna replace your .ini
+	then you should add to these sections
+	For any: [Send Commands], [Commands]
+	For cvar's (additional): [Settings] (cvar = initial value)
+				[Cvars] (cvar BAD)
+
+3.9
+	- Fixed crashes if update-notify server's are unavailable
+
+3.8e
+	- Removed additional loggin which was added in 3.8
+
+3.8
+	- Fixed first argv getting in cvar sandbox
+
+3.7
+	- Global hooks refactoring
+	- Implemented update notify
+	- No new cvars/cmds was added
+
+3.6
+	- Implemented parse_messagemode (cvar), 1 - gonna check is second arg not in blacklist, 
+		if not - execute, else - block, 0 - disabled
+		Related to plugins which are using messagemode for parsing strings, for example voteban reasons.
