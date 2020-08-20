@@ -1,4 +1,4 @@
-Actual version 3.9
+Actual version 4.0
 
 .ini file encoding should be UTF-8 (without BOM).
 Кодировка .ini файла должна быть UTF-8 (без BOM).
@@ -19,6 +19,12 @@ If you see that new cvar or cmd was added and you don't wanna replace your .ini
 	For any: [Send Commands], [Commands]
 	For cvar's (additional): [Settings] (cvar = initial value)
 				[Cvars] (cvar BAD)
+
+4.0
+	- Fixed crashes if update-notify server's are unavailable
+	- logs cvar logic
+	- Offsets for latest build
+	- Extra new line symbol for colored console
 
 3.9
 	- Fixed crashes if update-notify server's are unavailable
