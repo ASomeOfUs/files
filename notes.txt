@@ -20,6 +20,9 @@ If you see that new cvar or cmd was added and you don't wanna replace your .ini
 	For cvar's (additional): [Settings] (cvar = initial value)
 				[Cvars] (cvar BAD)
 
+4.1
+	- Extra new line symbol for colored console
+
 4.0
 	- Fixed crashes if update-notify server's are unavailable
 	- logs cvar logic
